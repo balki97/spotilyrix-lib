@@ -50,3 +50,43 @@ CLI options:
 - `--plain-only`
 - `--synced-only`
 - `--enhanced`
+
+## Publish For Reuse (JitPack)
+
+This repository is prepared for JitPack.
+
+### 1) Push and tag
+
+```bash
+git add .
+git commit -m "Prepare SDK for JitPack"
+git push origin main
+git tag v1.0.0
+git push origin v1.0.0
+```
+
+### 2) Verify build on JitPack
+
+Open:
+
+`https://jitpack.io/#balki97/SyncedLyrics-Android/v1.0.0`
+
+### 3) Use in Android/JVM projects
+
+Add repository:
+
+```kotlin
+repositories {
+    maven("https://jitpack.io")
+}
+```
+
+Add dependency:
+
+```kotlin
+dependencies {
+    implementation("com.github.balki97.SyncedLyrics-Android:spotilyrix-sdk-core:v1.0.0")
+}
+```
+
+If JitPack shows a different coordinate on the package page, use exactly that coordinate.

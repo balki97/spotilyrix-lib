@@ -37,7 +37,7 @@ class Lrclib : LrcProvider() {
                 arr.optJSONObject(i)?.let(list::add)
             }
             list
-        } ?: return null
+        }
 
         if (tracks.isEmpty()) return null
 
