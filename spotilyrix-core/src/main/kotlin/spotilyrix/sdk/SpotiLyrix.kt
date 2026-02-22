@@ -1,7 +1,7 @@
-package io.github.balki97.spotilyrix
+package spotilyrix.sdk
 
-import io.github.balki97.spotilyrix.providers.LrcProvider
-import io.github.balki97.spotilyrix.providers.Providers
+import spotilyrix.sdk.providers.LrcProvider
+import spotilyrix.sdk.providers.Providers
 import java.util.logging.Logger
 
 object SpotiLyrix {
@@ -95,5 +95,8 @@ object SpotiLyrix {
         return selected
     }
 }
+
+
+
 
 

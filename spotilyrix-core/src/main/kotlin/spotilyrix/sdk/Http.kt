@@ -1,4 +1,4 @@
-package io.github.balki97.spotilyrix
+package spotilyrix.sdk
 
 import okhttp3.HttpUrl
 import okhttp3.OkHttpClient
@@ -100,5 +100,8 @@ private fun OkHttpClient.executeWithRetry(request: Request, maxAttempts: Int = 3
 
     throw lastError ?: IOException("HTTP request failed after retries")
 }
+
+
+
 
 

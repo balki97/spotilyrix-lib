@@ -3,12 +3,10 @@ plugins {
 }
 
 allprojects {
-    group = "io.github.balki97"
+    group = "io.github.balki97.spotilyrix"
     version = "1.0.0"
 
     repositories {
         mavenCentral()
     }
 }
-
-

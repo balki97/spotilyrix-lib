@@ -1,6 +1,6 @@
-package io.github.balki97.spotilyrix.providers
+package spotilyrix.sdk.providers
 
-import io.github.balki97.spotilyrix.Lyrics
+import spotilyrix.sdk.Lyrics
 
 class Spotify : LrcProvider() {
     companion object {
@@ -18,5 +18,7 @@ class Spotify : LrcProvider() {
         throw NotImplementedError("Spotify provider is not implemented yet")
     }
 }
+
+
 
 

@@ -1,6 +1,6 @@
-package io.github.balki97.spotilyrix.cli
+package spotilyrix.sdk.cli
 
-import io.github.balki97.spotilyrix.search
+import spotilyrix.sdk.search
 
 private data class BenchRow(
     val query: String,
@@ -85,4 +85,6 @@ private fun parseBenchmarkArgs(args: Array<String>): ParsedBenchmarkArgs {
 
     return ParsedBenchmarkArgs(providers, repeats, queries)
 }
+
+
 

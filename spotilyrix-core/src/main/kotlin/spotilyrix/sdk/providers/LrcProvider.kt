@@ -1,7 +1,7 @@
-package io.github.balki97.spotilyrix.providers
+package spotilyrix.sdk.providers
 
-import io.github.balki97.spotilyrix.HttpClientFactory
-import io.github.balki97.spotilyrix.Lyrics
+import spotilyrix.sdk.HttpClientFactory
+import spotilyrix.sdk.Lyrics
 import okhttp3.OkHttpClient
 import java.util.logging.Logger
 
@@ -15,5 +15,7 @@ abstract class LrcProvider {
 
     abstract fun getLrc(searchTerm: String): Lyrics?
 }
+
+
 
 

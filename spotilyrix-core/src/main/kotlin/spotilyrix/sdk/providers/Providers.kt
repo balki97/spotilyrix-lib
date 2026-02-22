@@ -1,4 +1,4 @@
-package io.github.balki97.spotilyrix.providers
+package spotilyrix.sdk.providers
 
 object Providers {
     @JvmStatic
@@ -30,5 +30,7 @@ object Providers {
             .filter { lowered.contains(it.toString().lowercase()) }
     }
 }
+
+
 
 

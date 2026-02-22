@@ -12,12 +12,14 @@ kotlin {
     jvmToolchain(21)
 }
 
+base {
+    archivesName.set("spotilyrix-sdk-cli")
+}
+
 dependencies {
-    implementation(project(":spotilyrix-lib-core"))
+    implementation(project(":spotilyrix-sdk-core"))
 }
 
 application {
-    mainClass.set("io.github.balki97.spotilyrix.cli.MainKt")
+    mainClass.set("spotilyrix.sdk.cli.MainKt")
 }
-
-

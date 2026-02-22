@@ -1,7 +1,9 @@
-package io.github.balki97.spotilyrix.cli
+package spotilyrix.sdk.cli
 
 fun main(args: Array<String>) {
     cliHandler(args)
 }
+
+
 
 

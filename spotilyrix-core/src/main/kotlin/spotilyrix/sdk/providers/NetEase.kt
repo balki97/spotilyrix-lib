@@ -1,8 +1,8 @@
-package io.github.balki97.spotilyrix.providers
+package spotilyrix.sdk.providers
 
-import io.github.balki97.spotilyrix.Lyrics
-import io.github.balki97.spotilyrix.get
-import io.github.balki97.spotilyrix.getBestMatch
+import spotilyrix.sdk.Lyrics
+import spotilyrix.sdk.get
+import spotilyrix.sdk.getBestMatch
 import org.json.JSONArray
 import org.json.JSONObject
 
@@ -74,5 +74,7 @@ class NetEase : LrcProvider() {
         return getLrcById(id)
     }
 }
+
+
 
 

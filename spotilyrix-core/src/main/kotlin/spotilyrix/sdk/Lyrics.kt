@@ -1,4 +1,4 @@
-package io.github.balki97.spotilyrix
+package spotilyrix.sdk
 
 import java.io.File
 
@@ -40,5 +40,8 @@ data class Lyrics(
         File(path).writeText(output, Charsets.UTF_8)
     }
 }
+
+
+
 
 

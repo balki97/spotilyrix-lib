@@ -1,6 +1,6 @@
-package io.github.balki97.spotilyrix.cli
+package spotilyrix.sdk.cli
 
-import io.github.balki97.spotilyrix.search
+import spotilyrix.sdk.search
 import java.util.logging.Level
 import java.util.logging.Logger
 
@@ -110,5 +110,7 @@ private fun printUsage() {
     println("  --synced-only         Only look for synced lyrics")
     println("  --enhanced            Return word-by-word synced lyrics if available")
 }
+
+
 
 

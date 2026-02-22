@@ -1,4 +1,4 @@
-package io.github.balki97.spotilyrix
+package spotilyrix.sdk
 
 @JvmOverloads
 fun search(
@@ -20,5 +20,8 @@ fun search(
         enhanced = enhanced,
     )
 }
+
+
+
 
 

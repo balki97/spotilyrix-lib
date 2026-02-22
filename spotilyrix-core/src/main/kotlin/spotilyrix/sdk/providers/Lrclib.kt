@@ -1,9 +1,9 @@
-package io.github.balki97.spotilyrix.providers
+package spotilyrix.sdk.providers
 
-import io.github.balki97.spotilyrix.Lyrics
-import io.github.balki97.spotilyrix.get
-import io.github.balki97.spotilyrix.getAbsolute
-import io.github.balki97.spotilyrix.sortResults
+import spotilyrix.sdk.Lyrics
+import spotilyrix.sdk.get
+import spotilyrix.sdk.getAbsolute
+import spotilyrix.sdk.sortResults
 import org.json.JSONArray
 import org.json.JSONObject
 
@@ -49,5 +49,7 @@ class Lrclib : LrcProvider() {
         return getLrcById(id)
     }
 }
+
+
 
 

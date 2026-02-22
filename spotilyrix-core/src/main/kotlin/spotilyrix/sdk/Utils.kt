@@ -1,4 +1,4 @@
-package io.github.balki97.spotilyrix
+package spotilyrix.sdk
 
 import me.xdrop.fuzzywuzzy.FuzzySearch
 import org.jsoup.Jsoup
@@ -91,5 +91,8 @@ fun <T> getBestMatch(
     val compareValue = compareKey(best)
     return if (strSame(compareValue, searchTerm, minScore)) best else null
 }
+
+
+
 
 

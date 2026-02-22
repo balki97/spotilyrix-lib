@@ -1,4 +1,4 @@
-package io.github.balki97.spotilyrix
+package spotilyrix.sdk
 
 import kotlin.test.Test
 import kotlin.test.assertEquals
@@ -30,5 +30,8 @@ class UtilsTest {
         assertTrue(strScore("Song Artist", "song artist") > 90)
     }
 }
+
+
+
 
 

@@ -1,7 +1,7 @@
-package io.github.balki97.spotilyrix
+package spotilyrix.sdk
 
-import io.github.balki97.spotilyrix.providers.Lrclib
-import io.github.balki97.spotilyrix.providers.NetEase
+import spotilyrix.sdk.providers.Lrclib
+import spotilyrix.sdk.providers.NetEase
 import kotlin.test.Test
 import kotlin.test.assertEquals
 
@@ -14,5 +14,8 @@ class ProviderSelectionTest {
         assertEquals("NetEase", selected[0].toString())
     }
 }
+
+
+
 
 

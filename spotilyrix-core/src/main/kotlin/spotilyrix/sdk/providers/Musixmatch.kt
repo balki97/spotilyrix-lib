@@ -1,11 +1,11 @@
-package io.github.balki97.spotilyrix.providers
+package spotilyrix.sdk.providers
 
-import io.github.balki97.spotilyrix.Lyrics
-import io.github.balki97.spotilyrix.formatTime
-import io.github.balki97.spotilyrix.get
-import io.github.balki97.spotilyrix.getBestMatch
-import io.github.balki97.spotilyrix.getCachePath
-import io.github.balki97.spotilyrix.sortResults
+import spotilyrix.sdk.Lyrics
+import spotilyrix.sdk.formatTime
+import spotilyrix.sdk.get
+import spotilyrix.sdk.getBestMatch
+import spotilyrix.sdk.getCachePath
+import spotilyrix.sdk.sortResults
 import org.json.JSONArray
 import org.json.JSONObject
 import java.io.File
@@ -275,5 +275,7 @@ class Musixmatch(
         return get(action, query.toMutableList())
     }
 }
+
+
 
 
