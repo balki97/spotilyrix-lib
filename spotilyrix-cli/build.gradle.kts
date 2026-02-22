@@ -13,7 +13,7 @@ kotlin {
 }
 
 dependencies {
-    implementation(project(":spotilyrix-core"))
+    implementation(project(":spotilyrix-lib-core"))
 }
 
 application {

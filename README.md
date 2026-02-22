@@ -1,11 +1,11 @@
-# SpotiLyrix Kotlin Port
+# SpotiLyrix Lib (Kotlin)
 
 Kotlin/Java port of the Python `syncedlyrics` library for easier Android and JVM integration.
 
 ## Modules
 
-- `spotilyrix-core`: reusable Kotlin/JVM library API.
-- `spotilyrix-cli`: command-line entrypoint equivalent to Python `cli` + `__main__`.
+- `spotilyrix-lib-core`: reusable Kotlin/JVM library API.
+- `spotilyrix-lib-cli`: command-line entrypoint equivalent to Python `cli` + `__main__`.
 
 ## Core API
 
@@ -41,7 +41,7 @@ Current speed ranking (one-song verification on February 22, 2026):
 ## CLI
 
 ```bash
-./gradlew :spotilyrix-cli:run --args="Your Song Artist --synced-only"
+./gradlew :spotilyrix-lib-cli:run --args="Your Song Artist --synced-only"
 ```
 
 Options mirror upstream Python project:
@@ -59,10 +59,10 @@ Options mirror upstream Python project:
 Ported providers and project pieces:
 
 - Core API (`__init__`) -> `SpotiLyrix.search(...)` + top-level `search(...)`
-- CLI (`cli.py`) -> `spotilyrix-cli` module parser/handler
-- Main entry (`__main__.py`) -> `spotilyrix-cli` `main(...)`
+- CLI (`cli.py`) -> `spotilyrix-lib-cli` module parser/handler
+- Main entry (`__main__.py`) -> `spotilyrix-lib-cli` `main(...)`
 - Utilities (`utils.py`) -> `Utils.kt`, `Lyrics.kt`, `TargetType.kt`
-- Providers (`providers/*`) -> Kotlin providers in `spotilyrix-core`
+- Providers (`providers/*`) -> Kotlin providers in `spotilyrix-lib-core`
 
 Notes:
 
@@ -75,7 +75,7 @@ You can publish this for reuse by other projects/users.
 
 Quickest path: GitHub + JitPack
 
-1. Push this repository to GitHub (for example `balki97/spotilyrix`).
+1. Push this repository to GitHub (for example `balki97/spotilyrix-lib`).
 2. Create a release tag (for example `v1.0.0`).
 3. In consumer projects, add JitPack repository:
 
@@ -89,7 +89,7 @@ repositories {
 
 ```kotlin
 dependencies {
-    implementation("com.github.balki97:spotilyrix-core:v1.0.0")
+    implementation("com.github.balki97:spotilyrix-lib-core:v1.0.0")
 }
 ```
 
@@ -97,7 +97,7 @@ CLI artifact (optional):
 
 ```kotlin
 dependencies {
-    implementation("com.github.balki97:spotilyrix-cli:v1.0.0")
+    implementation("com.github.balki97:spotilyrix-lib-cli:v1.0.0")
 }
 ```
 
